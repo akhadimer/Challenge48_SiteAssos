@@ -13,12 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'WelcomeController@index')->name('accueil');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('assos', 'AssosController');
+Route::resource('assos', 'AssoController');
+
+Route::get('assos/supprimer/{id}', [
+    'as' => 'delete_event',
+    'uses' => 'AssoController@destroy'
+]);

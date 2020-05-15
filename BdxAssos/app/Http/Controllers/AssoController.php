@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Asso;
 use App\User;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Auth;
 
 class AssoController extends Controller
 {
@@ -23,6 +25,7 @@ class AssoController extends Controller
     {
         $res = Validator::make($request->all(), [
             'titre' => 'required|max:255',
+            'lieu' => 'required',
             'description' => 'required',
         ])->validate();
 
@@ -41,7 +44,6 @@ class AssoController extends Controller
     {
         $name_orga = User::where('id', $asso->user_id)->get()->first();
         return view('assos.show', [
-            'name_orga' => $name_orga,
             'asso' => $asso
         ]);
     }

@@ -15,7 +15,7 @@ class AssosTableSeeder extends Seeder
     {
         $users = User::all();
         foreach ($users as $user){
-            $user->assos()->saveMany(factory(Asso::class, 3)->make());
+            $user->assos()->saveMany(factory(Asso::class, 2)->make());
         }
     }
 }

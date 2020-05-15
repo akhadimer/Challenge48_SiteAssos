@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Asso;
 use Illuminate\Http\Request;
+use Auth;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $assos = Asso::where('user_id', Auth::user()->id)->get();
+        return view('home', [
+            'assos' => $assos
+        ]);
     }
 }
