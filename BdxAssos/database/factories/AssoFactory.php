@@ -10,5 +10,7 @@ $factory->define(Asso::class, function (Faker $faker) {
         'titre' => $faker->word,
         'description' => $faker->paragraph($nbSentences = 3, $variableNbSentences = true),
         'lieu' => $faker->streetAddress,
+        'url_site' => 'http://google.com',
+        'url_image' => 'http://placeimg.com/640/480/animals'
     ];
 });

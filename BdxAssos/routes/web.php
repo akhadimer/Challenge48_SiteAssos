@@ -25,3 +25,7 @@ Route::get('assos/supprimer/{id}', [
     'as' => 'delete_event',
     'uses' => 'AssoController@destroy'
 ]);
+
+Route::get('about', function () {
+    return view('about');
+});

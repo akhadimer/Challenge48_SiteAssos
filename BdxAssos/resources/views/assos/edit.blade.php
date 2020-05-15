@@ -20,6 +20,8 @@
                 <input type="text" class="form-control" id="lieu" name="lieu" value="{{ old('lieu', $asso->lieu) }}"><br><br>
                 <label for="url_image">Lien de l'image :</label>
                 <input type="text" class="form-control" id="url_image" name="url_image" value="{{ old('url_image', $asso->url_image) }}">
+                <label for="url_site">Lien du site :</label>
+                <input type="text" class="form-control" id="url_site" name="url_site" value="{{ old('url_site', $asso->url_site) }}">
                 <input type="submit" value="Modifier">
             </form>
         </center>

@@ -79,6 +79,7 @@ class AssoController extends Controller
         $asso->description = $request->description;
         $asso->lieu = $request->lieu;
         $asso->url_image = $request->url_image;
+        $asso->url_site = $request->url_site;
         $asso->save();
 
         return redirect()->route('home')->with('success', 'Asso Modifié');

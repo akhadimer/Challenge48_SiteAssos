@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Asso extends Model
 {
     protected $fillable = [
-        'titre', 'url_image', 'description', 'lieu',
+        'titre', 'url_image', 'description', 'lieu', 'url_site'
     ];
 
     protected $attributes = [

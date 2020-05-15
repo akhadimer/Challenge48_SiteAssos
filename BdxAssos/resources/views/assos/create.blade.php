@@ -4,7 +4,6 @@
 
 <div class="container">
 
-    <!-- Jumbotron Header -->
     <header class="jumbotron my-4">
         <center>
             <img src="https://cap.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcap.2F2019.2F01.2F10.2F20ce34e6-1fc1-4a29-9329-178a1c917574.2Ejpeg/750x375/background-color/ffffff/quality/70/creation-dune-association-choisir-le-bon-statut-1322815.jpg" alt="">
@@ -21,8 +20,6 @@
             </form>
         </center>
     </header>
-
-    <!-- /.row -->
 
 </div>
 

@@ -11,7 +11,7 @@
             espérer qu'elles puissent vous intéresser.</p>
         <p class="lead">Plus qu'un site, BdxAssos organise mensuellement des rencontres entre ces associations et les particuliers qui souhaitent s'informer.
         </p>
-        <a href="#" class="btn btn-primary btn-lg">Plus de détails ici !</a>
+        <a href="{{ url('about' ) }}" class="btn btn-primary btn-lg">Plus de détails ici !</a>
     </header>
 
     <!-- Page Features -->

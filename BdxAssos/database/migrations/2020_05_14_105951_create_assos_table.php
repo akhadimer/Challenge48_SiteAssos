@@ -17,6 +17,7 @@ class CreateAssosTable extends Migration
             $table->bigIncrements('id');
             $table->string('titre');
             $table->text('url_image');
+            $table->text('url_site');
             $table->text('description');
             $table->text('lieu');
             $table->unsignedBigInteger('user_id');
