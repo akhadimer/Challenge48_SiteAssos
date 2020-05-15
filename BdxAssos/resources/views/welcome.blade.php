@@ -23,7 +23,7 @@
                 <img class="card-img-top" src="{{ $asso->url_image }}" alt="">
                 <div class="card-body">
                     <h4 class="card-title">{{ $asso->titre }}</h4>
-                    <p class="card-text">{{ $asso->description }}</p>
+                    <p class="card-text"  style="overflow: hidden; height: 98px">{{ $asso->description }}</p>
 
                 </div>
                 <div class="card-footer">

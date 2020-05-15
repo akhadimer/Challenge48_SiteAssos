@@ -24,7 +24,7 @@
                     <div class="card-body">
                         <h4 class="card-title">{{ $asso->titre }}</h4>
                         <div style="width:80%;">
-                            <p class="card-text">{{ $asso->description }}</p>
+                            <p class="card-text" style="overflow: hidden; height: 98px">{{ $asso->description }}</p>
                         </div>
                     </div>
                     <div class="card-footer d-flex flex-wrap">
