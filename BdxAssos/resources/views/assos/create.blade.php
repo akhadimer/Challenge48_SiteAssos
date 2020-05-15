@@ -17,8 +17,6 @@
                 <textarea class="form-control" id="description" rows="3" name="description"></textarea><br><br>
                 <label for="lieu">Emplacement :</label>
                 <input type="text" class="form-control" id="lieu" name="lieu"><br><br>
-                <label for="url_image">Lien de l'image :</label>
-                <input type="text" class="form-control" id="url_image" name="url_image">
                 <input type="submit" value="Valider">
             </form>
         </center>

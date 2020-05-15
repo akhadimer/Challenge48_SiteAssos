@@ -7,8 +7,8 @@
         <h2>Mon compte</h2><br>
         <div class="d-flex justify-content-between">
             <div class="d-flex flex-column">
-                <p>E-mail :</p>
-                <p>Nom :<br>
+                <p>E-mail : {{ Auth::user()->email }}</p>
+                <p>Nom : {{ Auth::user()->name }}<br>
             </div>
             <div><a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();"><input class="btn btn-danger deconnection" type="submit" value="Deconnexion"></div></a>
